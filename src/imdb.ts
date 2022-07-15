@@ -476,9 +476,6 @@ export class TVShow extends Movie {
       });
       const reqopts = {
         searchParams: qs,
-        headers: {
-          "Content-Type": "application/json",
-        },
         timeout: undefined as number | undefined,
         prefixUrl: this.baseURL,
       };
@@ -754,9 +751,6 @@ export class Client {
     }
 
     const reqopts = {
-      headers: {
-        "Content-Type": "application/json",
-      },
       searchParams: qs,
       timeout: undefined as number | undefined,
       prefixUrl: this.baseURL,
@@ -825,9 +819,6 @@ export class Client {
     const qs = reqtoqueryobj(req, mergedOpts.apiKey, page);
     const reqopts = {
       searchParams: qs,
-      headers: {
-        "Content-Type": "application/json",
-      },
       timeout: undefined as number | undefined,
       prefixUrl: this.baseURL,
     };
